@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio - Álvaro Ortega Hamel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">Álvaro Ortega Hamel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Inicio -->
+  <section id="inicio" class="inicio-section position-relative text-white py-5">
+  <!-- Imagen de fondo desenfocada -->
+    <div class="blur-bg"></div>
+
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <!-- Imagen de perfil -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="img/perfil2.JPG" class="rounded-circle img-fluid perfil-con-marco" alt="Perfil" width="300" height="300">
+        </div>
+        <!-- Texto -->
+        <div class="col-md-8 text-center text-md-start">
+          <h1 class="display-5">Hola, soy Álvaro Ortega Hamel</h1>
+          <p class="lead">
+            Guionista y realizador audiovisual con más de 20 años de experiencia. 
+            En 2024 inicié mi camino como desarrollador web en JavaScript, 
+            combinando mis habilidades creativas con la programación. Actualmente curso un intensivo Bootcamp Fullstack en Python, 
+            donde espero adquirir las herramientas necesarias para desempeñarme profesionalmente como desarrollador backend. 
+            Este portafolio es una ventana a mi trabajo y mi proceso de aprendizaje.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyecto destacado -->
+  <section id="proyectos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Proyectos Destacados</h2>
+
+      <div id="carouselProyectos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="img/ConsM04.png" class="img-fluid rounded" alt="API Star Wars">
+              </div>
+              <div class="col-md-6">
+                <h5>API Star Wars</h5>
+                <p>Proyecto realizado en el Módulo 4 del Bootcamp Full-Stack JavaScript. Consume datos de la API SWAPI y los renderiza en pantalla con JavaScript.</p>
+                <a href="https://github.com/OrtegaHamel/M04Consolidacion.git" class="btn btn-info bg-secondary text-white">Ver en GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="img/ConsM03.png" class="img-fluid rounded" alt="Carrito de compras">
+              </div>
+              <div class="col-md-6">
+                <h5>Carrito de compras Html</h5>
+                <p>Práctica Módulo 3 del Bootcamp FullStack Javascript consistente en un carrito de compras dinámico con HTML y JavaScript</p>
+                <a href="https://github.com/OrtegaHamel/M03Consolidacion" class="btn btn-info bg-secondary text-white">Ver en GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="img/Portfolio2024.png" class="img-fluid rounded" alt="Portafolio">
+              </div>
+              <div class="col-md-6">
+                <h5>Portafolio personal</h5>
+                <p>Portafolio desarrollado con HTML, CSS y JavaScript.</p>
+                <a href="https://github.com/OrtegaHamel/Portfolio" class="btn btn-info bg-secondary text-white">Ver en GitHub</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ideas a futuro -->
+  <section class="py-5 text-center bg-dark text-white" >
+    <div class="container" >
+      <h2 class="mb-4">Ideas a Futuro</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card p-3 mb-3 future-card">
+            <h5>Repositorio sonoro chileno</h5>
+            <p>Web para preservar y compartir el modo de hablar en Chile.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3 mb-3 future-card">
+            <h5>Plataforma de colaboración creativa</h5>
+            <p>Para conectar artistas y desarrolladores en proyectos digitales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Habilidades Técnicas</h2>
+
+      <div class="row mb-4">
+        <h4 class="text-center mb-3">Actuales</h4>
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+          <div class="skill-item text-center">
+            <img src="img/HTML5_logo.png" alt="HTML" class="skill-logo" />
+            <p>HTML</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/csslogo.png" alt="CSS" class="skill-logo" />
+            <p>CSS</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/JavaScript-logo.png" alt="JavaScript" class="skill-logo" />
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/Bootstrap_logo.png" alt="Bootstrap" class="skill-logo" />
+            <p>Bootstrap</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/nodejs-logo.png" alt="Node.js" class="skill-logo" />
+            <p>Node.js</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/Postgresql_logo.png" alt="PostgreSQL" class="skill-logo" />
+            <p>PostgreSQL</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/github-logo.png" alt="Git" class="skill-logo" />
+            <p>GitHub</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h4 class="text-center mb-3">En Aprendizaje</h4>
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+          <div class="skill-item text-center">
+            <img src="img/Python-logo.png" alt="Python" class="skill-logo" />
+            <p>Python</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/django-logo.png" alt="Django" class="skill-logo" />
+            <p>Django</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/Mysql_logo.png" alt="MySQL" class="skill-logo" />
+            <p>MySQL</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/php-logo.png" alt="PHP" class="skill-logo" />
+            <p>PHP</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/react-logo.png" alt="React" class="skill-logo" />
+            <p>React</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/R_logo.png" alt="R" class="skill-logo" />
+            <p>R</p>
+          </div>
+          <div class="skill-item text-center">
+            <img src="img/tableau-logo.png" alt="Tableau" class="skill-logo" />
+            <p>Tableau</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5 text-white bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Contacto</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <p><i class="bi bi-envelope-fill me-2"></i>Email: <a href="mailto:ortega.hamel@gmail.com" class="text-white text-decoration-none">ortega.hamel@gmail.com</a></p>
+          <p><i class="bi bi-linkedin me-2"></i>LinkedIn: <a href="https://linkedin.com/in/alvaroortegahamel" target="_blank" class="text-white text-decoration-none">alvaroortegahamel</a></p>
+          <p><i class="bi bi-github me-2"></i>GitHub: <a href="https://github.com/OrtegaHamel" target="_blank" class="text-white text-decoration-none">OrtegaHamel</a></p>
+          <p><i class="bi bi-briefcase-fill me-2"></i>Disponible para proyectos freelance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-white text-center py-3">
+    <small>© 2025 Álvaro Ortega Hamel | Portafolio en desarrollo</small>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
